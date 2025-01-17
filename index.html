@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Webcrumbs Plugin</title>
     <style>
       @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
-      
+
       @import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
-      
+
       @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
-      
+
       /*! tailwindcss v3.4.11 | MIT License | https://tailwindcss.com*/
       *,
       :after,
@@ -26,15 +40,8 @@
       html {
         line-height: 1.5;
         -webkit-text-size-adjust: 100%;
-        font-family:
-          Open Sans,
-          ui-sans-serif,
-          system-ui,
-          sans-serif,
-          Apple Color Emoji,
-          Segoe UI Emoji,
-          Segoe UI Symbol,
-          Noto Color Emoji;
+        font-family: Open Sans, ui-sans-serif, system-ui, sans-serif,
+          Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
         font-feature-settings: normal;
         font-variation-settings: normal;
         -moz-tab-size: 4;
@@ -74,15 +81,8 @@
       kbd,
       pre,
       samp {
-        font-family:
-          ui-monospace,
-          SFMono-Regular,
-          Menlo,
-          Monaco,
-          Consolas,
-          Liberation Mono,
-          Courier New,
-          monospace;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          Liberation Mono, Courier New, monospace;
         font-feature-settings: normal;
         font-size: 1em;
         font-variation-settings: normal;
@@ -441,15 +441,8 @@
         padding-left: 16px;
       }
       #webcrumbs .font-title {
-        font-family:
-          Lato,
-          ui-sans-serif,
-          system-ui,
-          sans-serif,
-          Apple Color Emoji,
-          Segoe UI Emoji,
-          Segoe UI Symbol,
-          Noto Color Emoji;
+        font-family: Lato, ui-sans-serif, system-ui, sans-serif,
+          Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
       }
       #webcrumbs .text-2xl {
         font-size: 24px;
@@ -484,7 +477,8 @@
         color: rgb(34 1 116 / var(--tw-text-opacity));
       }
       #webcrumbs .shadow {
-        --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+        --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px -1px rgba(0, 0, 0, 0.1);
         --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
           0 1px 2px -1px var(--tw-shadow-color);
         box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
@@ -509,7 +503,7 @@
       #webcrumbs .hover\:underline:hover {
         text-decoration-line: underline;
       }
-      
+
       body {
         line-height: inherit;
         padding: 24px;
@@ -524,10 +518,128 @@
     </style>
   </head>
   <body>
-  <div id="webcrumbs">
-    <div class="w-[850px] bg-white shadow rounded-lg"> <header class="bg-neutral-200 px-8 py-6"> <h1 class="text-4xl font-title mb-2 text-neutral-950">John Doe</h1> <p class="text-lg text-neutral-700">A passionate front-end developer</p> <nav class="mt-4"> <ul class="flex gap-4"> <li><a href="#home" class="text-primary-950 hover:underline">Home</a></li> <li><a href="#about" class="text-primary-950 hover:underline">About</a></li> <li><a href="#projects" class="text-primary-950 hover:underline">Projects</a></li> <li><a href="#contact" class="text-primary-950 hover:underline">Contact</a></li> </ul> </nav> </header> <main class="px-8 py-6"> <section id="about" class="mb-8"> <h2 class="text-2xl font-title text-neutral-950 mb-4">About Me</h2> <p class="text-neutral-700"> Hi! I&#x27;m John Doe, a front-end developer who loves creating clean, responsive, and user-friendly websites. My passion lies in using modern technologies to solve real-world problems. </p> </section> <section id="skills" class="mb-8"> <h2 class="text-2xl font-title text-neutral-950 mb-4">Skills</h2> <ul class="list-disc pl-4 text-neutral-700"> <li>HTML</li> <li>CSS</li> <li>JavaScript</li> <li>React</li> </ul> </section> <section id="projects" class="mb-8"> <h2 class="text-2xl font-title text-neutral-950 mb-4">Projects</h2> <div class="flex flex-col gap-4"> <div class="bg-neutral-100 p-4 rounded-md"> <h3 class="text-xl font-title text-neutral-950">Portfolio Website</h3> <p class="text-neutral-700"> A personal portfolio website to showcase my skills and projects. </p> <a href="#" class="text-primary-950 hover:underline mt-2 block"> View Project </a> </div> <div class="bg-neutral-100 p-4 rounded-md"> <h3 class="text-xl font-title text-neutral-950">Task Manager</h3> <p class="text-neutral-700"> A simple task management tool built with React and TailwindCSS. </p> <a href="#" class="text-primary-950 hover:underline mt-2 block"> View Project </a> </div> </div> </section> <section id="contact" class="mb-8"> <h2 class="text-2xl font-title text-neutral-950 mb-4">Contact</h2> <form class="flex flex-col gap-4"> <input type="text" placeholder="Your Name" class="border border-neutral-300 rounded-md px-4 py-2"/> <input type="email" placeholder="Your Email" class="border border-neutral-300 rounded-md px-4 py-2"/> <textarea placeholder="Your Message" class="border border-neutral-300 rounded-md px-4 py-2" rows="4"></textarea> <button type="submit" class="bg-primary-500 text-neutral-50 py-2 rounded-md w-[150px]"> Submit </button> </form> </section> </main> <footer class="bg-neutral-800 px-8 py-6 text-neutral-50"> <p>© 2023 John Doe</p> <ul class="flex gap-4 mt-2"> <li> <a href="#" class="hover:underline flex items-center gap-2"> <i class="fa-brands fa-linkedin"></i> LinkedIn </a> </li> <li> <a href="#" class="hover:underline flex items-center gap-2"> <i class="fa-brands fa-github"></i> GitHub </a> </li> </ul> </footer> </div>
-
-
-  </div>
+    <div id="webcrumbs">
+      <div class="w-[850px] bg-white shadow rounded-lg">
+        <header class="bg-neutral-200 px-8 py-6">
+          <h1 class="text-4xl font-title mb-2 text-neutral-950">John Doe</h1>
+          <p class="text-lg text-neutral-700">
+            A passionate front-end developer
+          </p>
+          <nav class="mt-4">
+            <ul class="flex gap-4">
+              <li>
+                <a href="#home" class="text-primary-950 hover:underline"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="text-primary-950 hover:underline"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#projects" class="text-primary-950 hover:underline"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-primary-950 hover:underline"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main class="px-8 py-6">
+          <section id="about" class="mb-8">
+            <h2 class="text-2xl font-title text-neutral-950 mb-4">About Me</h2>
+            <p class="text-neutral-700">
+              Hi! I&#x27;m John Doe, a front-end developer who loves creating
+              clean, responsive, and user-friendly websites. My passion lies in
+              using modern technologies to solve real-world problems.
+            </p>
+          </section>
+          <section id="skills" class="mb-8">
+            <h2 class="text-2xl font-title text-neutral-950 mb-4">Skills</h2>
+            <ul class="list-disc pl-4 text-neutral-700">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+          </section>
+          <section id="projects" class="mb-8">
+            <h2 class="text-2xl font-title text-neutral-950 mb-4">Projects</h2>
+            <div class="flex flex-col gap-4">
+              <div class="bg-neutral-100 p-4 rounded-md">
+                <h3 class="text-xl font-title text-neutral-950">
+                  Portfolio Website
+                </h3>
+                <p class="text-neutral-700">
+                  A personal portfolio website to showcase my skills and
+                  projects.
+                </p>
+                <a href="#" class="text-primary-950 hover:underline mt-2 block">
+                  View Project
+                </a>
+              </div>
+              <div class="bg-neutral-100 p-4 rounded-md">
+                <h3 class="text-xl font-title text-neutral-950">
+                  Task Manager
+                </h3>
+                <p class="text-neutral-700">
+                  A simple task management tool built with React and
+                  TailwindCSS.
+                </p>
+                <a href="#" class="text-primary-950 hover:underline mt-2 block">
+                  View Project
+                </a>
+              </div>
+            </div>
+          </section>
+          <section id="contact" class="mb-8">
+            <h2 class="text-2xl font-title text-neutral-950 mb-4">Contact</h2>
+            <form class="flex flex-col gap-4">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="border border-neutral-300 rounded-md px-4 py-2"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="border border-neutral-300 rounded-md px-4 py-2"
+              />
+              <textarea
+                placeholder="Your Message"
+                class="border border-neutral-300 rounded-md px-4 py-2"
+                rows="4"
+              ></textarea>
+              <button
+                type="submit"
+                class="bg-primary-500 text-neutral-50 py-2 rounded-md w-[150px]"
+              >
+                Submit
+              </button>
+            </form>
+          </section>
+        </main>
+        <footer class="bg-neutral-800 px-8 py-6 text-neutral-50">
+          <p>© 2023 John Doe</p>
+          <ul class="flex gap-4 mt-2">
+            <li>
+              <a href="#" class="hover:underline flex items-center gap-2">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline flex items-center gap-2">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
